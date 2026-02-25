@@ -1,3 +1,25 @@
+---
+type: reference
+component_type: documentation
+title: Storage Schema (Example PRD Technical Document)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Technical reference for persistence rules, data shapes, entity definitions, and merge rules'
+keywords:
+  - schema
+  - storage
+  - data-model
+  - persistence
+  - prd
+tags:
+  - documentation
+  - example
+  - prd
+  - technical-doc
+created: '2026-02-25'
+---
+
 # Persistent data schema (technical reference)
 
 This folder contains a technical reference for persistence rules and data shapes.

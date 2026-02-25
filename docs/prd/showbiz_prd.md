@@ -1,4 +1,31 @@
+---
+type: reference
+component_type: documentation
+title: ShowBiz PRD (Example Benchmark Dataset)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Complete product requirements document for a TV/movie companion app; used as the primary benchmark reference material for PRD coverage evaluation'
+keywords:
+  - prd
+  - product-spec
+  - example
+  - benchmarking
+  - entertainment-app
+  - showbiz
+tags:
+  - documentation
+  - example
+  - product-spec
+  - reference
+  - benchmark-dataset
+created: '2026-02-25'
+updated: '2026-02-25'
+---
+
 # Product Requirements Document
+
+> **Benchmark Dataset:** This is an example PRD used for agent planning benchmarking. It is not an operational product specification. See the [README](../../README.md) for how this PRD is used in the 3-step evaluation workflow.
 
 This PRD was assembled by merging earlier drafts and cross‑checking against the current codebase. Where sources diverged, this document favors the clearest rule set and notes open questions.
 

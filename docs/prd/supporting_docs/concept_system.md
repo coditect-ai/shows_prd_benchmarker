@@ -1,3 +1,25 @@
+---
+type: reference
+component_type: documentation
+title: Concept System Spec (Example PRD Supporting Document)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Defines concepts as taste-DNA for discovery: generation rules, selection constraints, and usage in Alchemy and Explore Similar'
+keywords:
+  - concepts
+  - discovery
+  - taste
+  - alchemy
+  - prd
+tags:
+  - documentation
+  - example
+  - prd
+  - supporting-doc
+created: '2026-02-25'
+---
+
 # Concept System Spec (v1)
 
 Defines what “concepts” are in the product, why they matter to users, and the generation/selection rules needed to preserve the app’s alchemy.

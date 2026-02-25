@@ -1,58 +1,65 @@
-## Development Guidelines
+---
+type: documentation
+title: PRD Benchmarker - AI Agent Context
+version: 1.0.0
+status: active
+scope: shows-prd-benchmarker tool
+audience: ai-agent
+created: '2026-02-25'
+updated: '2026-02-25'
+---
 
-This structure optimizes for testability and change isolation—small, focused units with clear boundaries.
+# PRD Benchmarker - AI Agent Context
 
-### Fractal Architecture
+Core framework directives are in the parent `.claude/CLAUDE.md` (loaded automatically).
+This file provides tool-specific guidance for the PRD benchmarking workflow.
 
-**Pattern:** Pages contain Features, Features contain Sub-Features—each following the same structure.
+---
 
-- **Pages:** Top-level routes/screens
-- **Features:** Distinct UI sections within a page (what you see on screen)
-- **Sub-Features:** Nested functionality within a feature
+## Critical Rules
 
-Every feature is self-contained: its own hooks, utils, and child features live inside its directory.
+1. **Fresh context per step.** Steps 1, 2, and 3 MUST each run in a separate conversation. Never evaluate a plan in the same context that produced it.
 
-### Directory Structure
+2. **Read everything before acting.** In Steps 1 and 2, read ALL files in `docs/prd/` including every file in `supporting_docs/` before producing any output. Surface-level reads miss critical constraints.
 
-**Naming Rule:** Avoid `index.tsx`. Main file matches directory name (`MyFeature/MyFeature.tsx`).
+3. **Anchor every requirement.** In Step 2, every extracted requirement MUST cite a specific PRD file and section heading. If you cannot cite it, delete it.
 
-```
-src/
-├── config/          # Global constants & env vars
-├── theme/           # Design tokens & styling
-├── components/      # Shared UI primitives
-├── hooks/           # Global hooks
-├── utils/           # Global pure functions
-└── pages/
-    └── PageName/
-        ├── PageName.tsx
-        └── features/
-            └── FeatureName/
-                ├── FeatureName.tsx
-                ├── hooks/
-                ├── utils/
-                └── features/
-                    └── SubFeature/
-                        ├── SubFeature.tsx
-                        └── hooks/
-```
+4. **Be honest about coverage.** If a plan only implies or vaguely references a requirement, score it `partial`, not `full`. Absence = `missing`.
 
-### Code Standards
+5. **Interpret, don't restate.** The coverage narrative must synthesize patterns ("gaps cluster around AI behavioral contracts") not echo table data ("6 items are partial").
 
-**Humble Components**
-- TSX files contain markup and binding only
-- Extract all logic to custom hooks: `const { data, handlers } = useFeatureLogic()`
+---
 
-**No Magic Numbers or Inline Styles**
-- Constants go in `src/config/` or local `constants.ts`
-- No hex codes, colors, or pixel values in TSX—reference theme tokens only
-- Styling concerns live in the style system, not in markup
+## Workflow
 
-**Co-location**
-- Feature-specific hooks/utils live inside that feature's directory
-- If SubFeature is only used by Parent, it lives in `Parent/features/SubFeature/`
+| Step | Prompt File | Output | Fresh Context? |
+|------|-------------|--------|----------------|
+| 1 | `1-START_HERE.md` | `results/PLAN.md` | Yes |
+| 2 | `2-EVALUATE_PLAN.md` | `results/PLAN_EVAL.md` | Yes (new conversation) |
+| 3 | `3-PLAN_EVAL_REPORT.md` | `results/PLAN_EVAL_REPORT.html` | Yes (new conversation) |
 
-**Quality**
-- Lint-clean code
-- Unit tests for critical logic (adjacent to source files)
-- Visual testing highly preferred where valid and protective
+---
+
+## PRD Reading Order
+
+1. `docs/prd/showbiz_prd.md` (primary specification)
+2. `docs/prd/showbiz_infra_rider_prd.md` (infrastructure constraints)
+3. All files in `docs/prd/supporting_docs/` (detailed specifications)
+4. `docs/prd/supporting_docs/technical_docs/` (data schemas)
+
+---
+
+## Exact Labels (No Variants)
+
+**Coverage:** `full` | `partial` | `missing`
+**Severity:** `critical` | `important` | `detail`
+
+---
+
+## Frontend Architecture Reference
+
+The ShowBiz PRD assumes a fractal frontend architecture. See `docs/prd/supporting_docs/frontend-architecture.md` for the coding standards the benchmarked plan should address.
+
+---
+
+**CODITECT Integration:** `skills/prd-benchmarker/SKILL.md` | `commands/prd-benchmark.md` | `agents/prd-benchmarker-specialist.md`

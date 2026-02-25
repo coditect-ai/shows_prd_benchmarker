@@ -1,3 +1,25 @@
+---
+type: reference
+component_type: documentation
+title: AI Voice & Personality Spec (Example PRD Supporting Document)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Product-level AI persona definition: voice pillars, tonal guidelines, and consistency rules across all AI surfaces'
+keywords:
+  - ai
+  - voice
+  - personality
+  - persona
+  - prd
+tags:
+  - documentation
+  - example
+  - prd
+  - supporting-doc
+created: '2026-02-25'
+---
+
 # AI Voice & Personality Spec (v1)
 
 This is a product‑level description of the AI “heart” of the product. It defines *who the AI is*, what users should *feel*, and how the voice stays consistent across Scoop, Ask, Alchemy, and Explore Similar.  

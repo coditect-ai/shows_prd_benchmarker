@@ -1,3 +1,26 @@
+---
+type: prompt
+title: PRD Report Generation Prompt (Step 3 of 3)
+version: 1.0.0
+status: active
+audience: coding-agent
+summary: 'Step 3 of 3-step benchmarking workflow: agent generates self-contained HTML stakeholder dashboard from evaluation results'
+keywords:
+  - prd
+  - reporting
+  - visualization
+  - benchmarking
+  - html
+  - stakeholder
+tags:
+  - prompt
+  - workflow
+  - step-3
+  - reporting
+created: '2026-02-25'
+updated: '2026-02-25'
+---
+
 # VISUALIZE GAPS
 
 ## Overview

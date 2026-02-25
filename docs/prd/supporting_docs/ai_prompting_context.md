@@ -1,3 +1,24 @@
+---
+type: reference
+component_type: documentation
+title: AI Prompting & Context Guide (Example PRD Supporting Document)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Behavioral contracts for all AI surfaces: context inclusion, output constraints, and voice preservation rules'
+keywords:
+  - ai
+  - prompting
+  - behavioral-contracts
+  - prd
+tags:
+  - documentation
+  - example
+  - prd
+  - supporting-doc
+created: '2026-02-25'
+---
+
 # AI Prompting & Context Guide (v1)
 
 This document captures the *behavioral contracts* for the app’s AI surfaces: what context is included, what the AI must output, and the constraints that preserve the product’s voice and usefulness. It is intentionally platform- and technology-agnostic.

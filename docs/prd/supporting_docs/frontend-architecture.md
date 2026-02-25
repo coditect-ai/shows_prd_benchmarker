@@ -1,3 +1,27 @@
+---
+type: reference
+component_type: documentation
+title: Frontend Architecture Guidelines (Example PRD Supporting Document)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Fractal frontend architecture pattern, directory structure conventions, humble components, and code quality standards'
+keywords:
+  - architecture
+  - frontend
+  - fractal
+  - react
+  - typescript
+  - prd
+tags:
+  - documentation
+  - example
+  - prd
+  - supporting-doc
+  - architecture
+created: '2026-02-25'
+---
+
 ## Development Guidelines
 
 This structure optimizes for testability and change isolation—small, focused units with clear boundaries.

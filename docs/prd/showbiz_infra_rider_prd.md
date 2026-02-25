@@ -1,3 +1,28 @@
+---
+type: reference
+component_type: documentation
+title: ShowBiz Infrastructure Rider PRD (Example Benchmark Dataset)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Infrastructure and execution constraints for PRD benchmarking; defines baseline requirements, isolation model, and data persistence rules'
+keywords:
+  - prd
+  - infrastructure
+  - deployment
+  - next-js
+  - supabase
+  - benchmarking
+tags:
+  - documentation
+  - example
+  - infrastructure
+  - reference
+  - benchmark-dataset
+created: '2026-02-25'
+updated: '2026-02-25'
+---
+
 # Infrastructure & Execution Rider PRD (Benchmark Mode)
 
 ## 0. Purpose

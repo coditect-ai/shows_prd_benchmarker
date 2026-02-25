@@ -1,3 +1,25 @@
+---
+type: reference
+component_type: documentation
+title: Discovery Quality Bar (Example PRD Supporting Document)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Acceptance criteria for on-brand taste-aware discovery, plus golden set for rebuild and regression validation'
+keywords:
+  - quality
+  - discovery
+  - acceptance-criteria
+  - golden-set
+  - prd
+tags:
+  - documentation
+  - example
+  - prd
+  - supporting-doc
+created: '2026-02-25'
+---
+
 # Discovery Quality Bar & Golden Set (v1)
 
 Defines the acceptance criteria for “on‑brand, taste‑aware discovery,” plus a living golden set for rebuild/regression validation.

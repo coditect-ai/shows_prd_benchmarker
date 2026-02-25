@@ -1,3 +1,25 @@
+---
+type: reference
+component_type: documentation
+title: Detail Page Experience Spec (Example PRD Supporting Document)
+version: 1.0.0
+status: active
+audience: contributor
+summary: 'Show detail page UX hierarchy, AI-powered actions, and first-15-seconds narrative experience specification'
+keywords:
+  - ux
+  - detail-page
+  - experience
+  - ai-actions
+  - prd
+tags:
+  - documentation
+  - example
+  - prd
+  - supporting-doc
+created: '2026-02-25'
+---
+
 # Detail Page Experience Spec (v1)
 
 Defines the intended user experience and narrative hierarchy of the Show Detail page, including the AI‑powered actions that create the app’s “alchemy.”

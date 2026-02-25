@@ -1,3 +1,27 @@
+---
+type: prompt
+title: PRD Evaluation Prompt (Step 2 of 3)
+version: 1.0.0
+status: active
+audience: coding-agent
+summary: 'Step 2 of 3-step benchmarking workflow: agent audits implementation plan against PRD for coverage, extracts requirements, scores by severity tier'
+keywords:
+  - prd
+  - evaluation
+  - coverage
+  - benchmarking
+  - gap-analysis
+  - requirements-extraction
+tags:
+  - prompt
+  - workflow
+  - step-2
+  - evaluation
+created: '2026-02-25'
+updated: '2026-02-25'
+estimated_tokens: 2000
+---
+
 # PLAN EVALUATION
 
 This evaluation step is not used until after an entire plan has been written.
